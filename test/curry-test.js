@@ -11,5 +11,13 @@ describe('Pipeline components', ()=>
       let chunkSize = 7;
       assert.equal(curryable.arrayChunker(chunkSize)(arr1).length, Math.ceil(arr1.length / chunkSize) );
     })
+    it('each array size should equal the interval', () => {
+      let chunkSize = 7;
+      assert.equal(curryable.arrayChunker(chunkSize)(arr1).length, Math.ceil(arr1.length / chunkSize) );
+
+      let chunkedArray = curryable.arrayChunker(chunkSize)(arr1);
+      let chunkedArrayFiltered = curryable.arrayChunker(chunkSize)(arr1).filter( (num) => num == chunkSize );
+      assert.equal(chunkedArray.length, chunkedArray)
+    })
   )
 )
