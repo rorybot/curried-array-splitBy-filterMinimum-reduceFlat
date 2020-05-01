@@ -8,7 +8,7 @@ const arr1 = [...Array(100)].map(() => {
 describe('Pipeline components', ()=>
   describe('arrayChunker', ()=>
     it('number of arrays should equal rounded up length of origianl divided by the interval', () =>
-      assert.equal(curryable.arrayChunker(1)(arr1).length, 100 )
+      assert.equal(curryable.arrayChunker(1)(arr1).length, arr1.length / 1 )
     )
   )
 )
