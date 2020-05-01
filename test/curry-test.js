@@ -1,5 +1,8 @@
 var assert = require('assert');
-const curryBoy = require('../pipeline');
+const pipeline = require('../pipeline');
+const arr1 = [...Array(100)].map(() => {
+  return Math.floor(Math.random() * 9);
+});
 
 describe('Array', function() {
   describe('#indexOf()', function() {
@@ -9,4 +12,4 @@ describe('Array', function() {
   });
 });
 
-console.log(curryBoy.finalResult());
+console.log(pipeline.findHighestNumberInInterval(arr1, 4,5));
