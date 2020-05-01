@@ -9,15 +9,17 @@ describe('Pipeline components', ()=>
   describe('arrayChunker', ()=>
     it('number of arrays should equal rounded up length of origianl divided by the interval', () => {
       let chunkSize = 7;
-      assert.equal(curryable.arrayChunker(chunkSize)(arr1).length, Math.ceil(arr1.length / chunkSize) );
-    })
+      assert.equal(
+        curryable.arrayChunker(chunkSize)(arr1).length,
+        Math.ceil(arr1.length / chunkSize)
+      )
+    }),
     it('each array size should equal the interval', () => {
       let chunkSize = 7;
-      assert.equal(curryable.arrayChunker(chunkSize)(arr1).length, Math.ceil(arr1.length / chunkSize) );
 
       let chunkedArray = curryable.arrayChunker(chunkSize)(arr1);
-      let chunkedArrayFiltered = curryable.arrayChunker(chunkSize)(arr1).filter( (num) => num == chunkSize );
-      assert.equal(chunkedArray.length, chunkedArray)
+      let chunkedArrayFiltered = curryable.arrayChunker(chunkSize)(arr1).map( (num) => num == chunkSize );
+      assert.equal(chunkedArray.length, chunkedArrayFiltered.length)
     })
   )
 )
