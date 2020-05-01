@@ -1,0 +1,25 @@
+{
+  "name": "curry-practice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "curry.js",
+  "scripts": {
+    "start": "node curry.js",
+    "test": "mocha",
+    "watch": "watch 'npm run start' ./"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rorybot/curried-array-splitBy-filterMinimum-reduceFlat.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rorybot/curried-array-splitBy-filterMinimum-reduceFlat/issues"
+  },
+  "homepage": "https://github.com/rorybot/curried-array-splitBy-filterMinimum-reduceFlat#readme",
+  "dependencies": {
+    "concurrently": "^5.2.0",
+    "watch": "^1.0.2"
+  }
+}
