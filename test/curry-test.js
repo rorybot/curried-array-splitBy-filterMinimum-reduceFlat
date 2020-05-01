@@ -1,5 +1,5 @@
 var assert = require('assert');
-const curryBoy = require('../curry');
+const curryBoy = require('../pipeline');
 
 describe('Array', function() {
   describe('#indexOf()', function() {
