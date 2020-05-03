@@ -2,9 +2,9 @@
   "name": "curry-practice",
   "version": "1.0.0",
   "description": "",
-  "main": "curry.js",
+  "main": "pipeline.js",
   "scripts": {
-    "start": "node curry.js",
+    "start": "node pipeline.js",
     "test": "mocha",
     "watch": "watch 'npm run start' ./"
   },
